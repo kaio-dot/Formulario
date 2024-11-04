@@ -1,0 +1,462 @@
+/*//////////////////////////////////////////////////////////////////
+[ FONT ]*/
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../fonts/montserrat/Montserrat-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-ExtraBold;
+    src: url('../fonts/montserrat/Montserrat-ExtraBold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Montserrat-Medium;
+    src: url('../fonts/montserrat/Montserrat-Medium.ttf'); 
+  }
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  
+  [ RESTYLE TAG ]*/
+  
+  * {
+      margin: 0px; 
+      padding: 0px; 
+      box-sizing: border-box;
+  }
+  
+  body, html {
+      height: 100%;
+      font-family: Montserrat-Regular, sans-serif;
+      background-color: #1c1c1c; /* Cor de fundo mais sóbria */
+      color: #ffffff; /* Cor do texto em branco */
+  }
+  
+  /*---------------------------------------------*/
+  a {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #cccccc; /* Cor dos links */
+      margin: 0px;
+      transition: all 0.4s;
+  }
+  
+  a:focus {
+      outline: none !important;
+  }
+  
+  a:hover {
+      text-decoration: none;
+      color: #57b846; /* Cor do hover nos links */
+  }
+  
+  /*---------------------------------------------*/
+  h1,h2,h3,h4,h5,h6 {
+      margin: 0px;
+  }
+  
+  p {
+      font-family: Montserrat-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #cccccc; /* Cor do texto */
+      margin: 0px;
+  }
+  
+  ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+  
+  
+  /*---------------------------------------------*/
+  input {
+      outline: none;
+      border: none;
+  }
+  
+  textarea {
+    outline: none;
+    border: none;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: transparent !important;
+  }
+  
+  input::-webkit-input-placeholder { color: #999999; }
+  input:-moz-placeholder { color: #999999; }
+  input::-moz-placeholder { color: #999999; }
+  input:-ms-input-placeholder { color: #999999; }
+  
+  textarea::-webkit-input-placeholder { color: #999999; }
+  textarea:-moz-placeholder { color: #999999; }
+  textarea::-moz-placeholder { color: #999999; }
+  textarea:-ms-input-placeholder { color: #999999; }
+  
+  /*---------------------------------------------*/
+  button {
+      outline: none !important;
+      border: none;
+      background: transparent;
+  }
+  
+  button:hover {
+      cursor: pointer;
+  }
+  
+  iframe {
+      border: none !important;
+  }
+  
+  
+  /*//////////////////////////////////////////////////////////////////
+  
+  [ Contact 1 ]*/
+  
+  
+  .contact1 {
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+    background: #1c1c1c; /* Mantém a cor de fundo mais sóbria */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    margin: 20px; /* Adiciona margem ao redor do contêiner */
+  }
+  
+  .wrap-input1 {
+    margin: 20px 0;
+    text-align: center; /* Centraliza o texto e os inputs */
+  }
+  
+  
+  
+  .input1 {
+    width: 100%; /* Largura total para responsividade */
+    padding: 10px;
+    border: 2px solid #555; /* Borda mais destacada */
+    border-radius: 5px; /* Borda arredondada */
+    background-color: #f0f0f0; /* Fundo do input */
+    font-size: 16px; /* Tamanho da fonte */
+  }
+  
+  .shadow-input1 {
+    display: none; /* Removendo a sombra do input se não for necessário */
+  }
+  
+  
+  label {
+    margin-bottom: 5px; /* Espaçamento abaixo do rótulo */
+    text-align: center; /* Centraliza o texto do rótulo */
+  }
+  
+  
+  
+  .container-contact1 {
+    width: 100%;
+    max-width: 1200px; /* Limita a largura máxima */
+    background: #2c2c2c; /* Fundo do container */
+    border-radius: 10px;
+    overflow: hidden;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+  
+    padding: 60px 30px; /* Adapta o padding para telas menores */
+  }
+  
+  /*------------------------------------------------------------------
+  
+  [  ]*/
+  .contact1-pic {
+    width: 30%; /* Tamanho do lado da imagem */
+  }
+  
+  .contact1-pic img {
+    max-width: 100%;
+  }
+  
+  /*------------------------------------------------------------------
+  
+  [  ]*/
+  .contact1-form {
+    width: 100%;
+    max-width: 400px; /* Limita a largura máxima do formulário */
+  }
+  
+  .contact1-form-title {
+    display: block;
+    font-family: Montserrat-ExtraBold;
+    font-size: 24px;
+    color: #ffffff; /* Cor do título em branco */
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  
+  /* Estilização do controle deslizante */
+  input[type="range"] {
+    width: 100%; /* Largura total do slider */
+    height: 8px; /* Altura do slider */
+    background: #57b846; /* Cor de fundo do slider */
+    border-radius: 5px; /* Bordas arredondadas */
+    outline: none; /* Remove o contorno */
+    opacity: 0.7; /* Opacidade do slider */
+    transition: opacity 0.2s; /* Transição suave */
+  }
+  
+  
+  /* Remove as setas dos inputs de número */
+  input[type=number] {
+    -webkit-appearance: none; /* Para navegadores baseados em WebKit (Chrome, Safari) */
+    -moz-appearance: textfield; /* Para Firefox */
+    appearance: textfield; /* Padrão, para compatibilidade com outros navegadores */
+  }
+  
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  
+  
+  input[type="range"]:hover {
+    opacity: 1; /* Opacidade total ao passar o mouse */
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Largura do botão do slider */
+    height: 20px; /* Altura do botão do slider */
+    background: #ffffff; /* Cor do botão do slider */
+    border-radius: 50%; /* Botão circular */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+  }
+  
+  input[type="range"]::-moz-range-thumb {
+    width: 20px; /* Largura do botão do slider */
+    height: 20px; /* Altura do botão do slider */
+    background: #ffffff; /* Cor do botão do slider */
+    border-radius: 50%; /* Botão circular */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+  }
+  
+  
+  .input1 {
+    border: 2px solid #57b846; /* Borda mais grossa e verde */
+    transition: border-color 0.3s; /* Animação suave */
+    color: #ffffff; /* Cor do texto padrão */
+  }
+  
+  input.input1 {
+    height: 50px;
+    border-radius: 25px;
+    padding: 0 20px; /* Ajuste do padding */
+    margin: 10px 0; /* Espaçamento vertical */
+  }
+  
+  textarea.input1 {
+    min-height: 150px;
+    border-radius: 25px;
+    padding: 12px 20px; /* Ajuste do padding */
+  }
+  
+  /*---------------------------------------------*/
+  .wrap-input1 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+  .input1 {
+      background-color: #3a3a3a; /* Cor de fundo dos inputs */
+      color: #ffffff; /* Cor do texto padrão */
+      border: 2px solid #57b846; /* Borda mais grossa e verde */
+      padding: 10px; /* Espaçamento interno */
+      transition: background-color 0.3s, color 0.3s; 
+  }
+  
+  
+  .shadow-input1 {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 0px 0px;
+    color: rgba(87,184,70, 0.5);
+  }
+  
+  .input1:focus + .shadow-input1 {
+    animation: anim-shadow 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes anim-shadow {
+    to {
+      box-shadow: 0px 0px 80px 30px;
+      opacity: 0;
+    }
+  }
+  
+  /*---------------------------------------------*/
+  .container-contact1-form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact1-form-btn {
+    min-width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background: #57b846; /* Cor do botão */
+    font-family: Montserrat-Bold;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+    gap: 8px;
+  }
+  
+  /* Classe para o estado de loading */
+  .contact1-form-btn.loading {
+    background-color: #888; /* Cor do botão durante o loading */
+    pointer-events: none; /* Evita cliques enquanto carrega */
+  }
+  
+  /* Spinner para o loading */
+  .contact1-form-btn .spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid white;
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  
+  .contact1-form-btn:hover {
+    background: #333333; /* Cor do botão ao passar o mouse */
+  }
+  
+  /* Estilização dos botões de mais e menos */
+  .btn-more, .btn-less {
+    background-color: #57b846; /* Cor de fundo dos botões */
+    border-radius: 50%; /* Botões circulares */
+    width: 40px;
+    height: 40px;
+    color: white; /* Cor do texto dos botões */
+    font-size: 20px; /* Tamanho da fonte dos botões */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Margem entre os botões */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  }
+  
+  .btn-more:hover, .btn-less:hover {
+    background-color: #333333; /* Cor ao passar o mouse */
+  }
+  
+  
+  /*------------------------------------------------------------------
+  [ Responsive ]*/
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  @media (max-width: 1200px) {
+    .contact1-pic {
+      width: 40%;
+    }
+  
+    .contact1-form {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container-contact1 {
+      padding: 60px 40px; /* Ajusta o padding */
+    }
+  
+    .contact1-pic {
+      width: 35%;
+    }
+  
+    .contact1-form {
+      width: 65%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container-contact1 {
+      padding: 60px 15px; /* Ajusta o padding */
+    }
+  
+    .contact1-pic {
+      display: none; /* Oculta a imagem em telas menores */
+    }
+  
+    .contact1-form {
+      width: 100%; /* Adapta para tela cheia */
+    }
+  
+    .box-metrics {
+      padding: 15px; /* Reduz o padding em telas menores */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container-contact1 {
+      padding: 60px 15px; /* Ajusta o padding */
+    }
+  
+    .contact1-form-title {
+      font-size: 20px; /* Reduz o tamanho da fonte do título */
+    }
+  
+    .contact1-form-btn {
+      min-width: 150px; /* Ajusta a largura mínima dos botões */
+      font-size: 14px; /* Reduz o tamanho da fonte do botão */
+    }
+  
+    .btn-more, .btn-less {
+      width: 35px; /* Ajusta a largura dos botões */
+      height: 35px; /* Ajusta a altura dos botões */
+      font-size: 18px; /* Ajusta o tamanho da fonte dos botões */
+    }
+  }
+  

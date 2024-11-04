@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Formulário</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="imagens/icons8-home-16.png"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+
+<div class="contact1">
+    <div class="container-contact1">
+        <div class="contact1-pic js-tilt" data-tilt>
+            <img src="imagens/img-01.png" alt="Imagem do Formulário">
+        </div>
+
+        <form class="contact1-form validate-form" id="contactForm" action="app.php" method="POST">
+            <span class="contact1-form-title">
+                Vamos lá!
+            </span>
+
+            <div class="container">
+                <div class="wrap-input1 validate-input" data-validate="Nome é obrigatório">
+                    <label for="nameInput">Nome</label>
+                    <input class="input1" type="text" name="nome" id="nameInput" placeholder="Nome" autocomplete="name" required>
+                    <span class="shadow-input1"></span>
+                </div>
+            
+                <div class="wrap-input1 validate-input" data-validate="Email obrigatório: ex@abc.xyz">
+                    <label for="emailInput">Email</label>
+                    <input class="input1" type="email" name="email" id="emailInput" placeholder="Email" autocomplete="email" required>
+                    <span class="shadow-input1"></span>
+                </div>
+            
+                <div class="wrap-input1 validate-input" data-validate="Número é obrigatório">
+                    <label for="phoneInput">Telefone</label>
+                    <input class="input1" type="text" name="phone" id="phoneInput" placeholder="(XX)XXXXX-XXXX" maxlength="15" required>
+                    <span class="shadow-input1"></span>
+                </div>
+            </div>
+            <div class="container">
+              <div class="contact1-form">
+                <span class="contact1-form-title">Informações de Medidas</span>
+                
+                    <div class="wrap-input1 validate-input" data-validate="Altura é obrigatória">
+                        <label for="heightInput">Altura (cm)</label>
+                        <input class="input1" type="number" name="altura" id="heightInput" min="0" max="300" value="170" required>
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Peso é obrigatório">
+                        <label for="weightInput">Peso (kg)</label>
+                        <input class="input1" type="number" name="peso" id="weightInput" min="0" value="70" required>
+                        <span class="shadow-input1"></span>
+                    </div>
+
+                    <div class="wrap-input1 validate-input" data-validate="Peso ideal é obrigatório">
+                        <label for="idealWeightInput">Peso Ideal (kg)</label>
+                        <input class="input1" type="number" name="pesoIdeal" id="idealWeightInput" min="0" value="65" required>
+                        <span class="shadow-input1"></span>
+                    </div>
+                
+
+                <div class="container-contact1-form-btn">
+                    <button class="contact1-form-btn" type="submit" id="submitButton">
+                        <span>
+                            Prosseguir
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+              </div>
+            </div>
+        </form>
+
+        
+    </div>
+</div>
+<script src="js/index.js" defer></script>
+</body>
+</html>
