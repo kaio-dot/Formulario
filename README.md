@@ -1,10 +1,8 @@
 # Formulário Assíncrono
 
-![GitHub repo size](https://img.shields.io/github/repo-size/kaio-dot/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/kaio-dot/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/kaio-dot/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/kaio-dot/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/kaio-dot/README-template?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/kaio-dot/Formulario?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/kaio-dot/Formulario?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/kaio-dot/Formulario?style=for-the-badge)
 
 <img src="https://github.com/user-attachments/assets/5073328e-95c4-4cf0-ab19-f07a5f5d0703" alt="Desktop e Mobile">
 
