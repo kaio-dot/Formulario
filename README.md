@@ -10,7 +10,7 @@
 
 ### Ajustes e melhorias
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+O projeto já está finalizado podendo possuir melhorias vindo de quem quiser usar!
 
 - [x] Tarefa 1 - Front-end concluído.
 - [x] Tarefa 2 - Início da estilização com JavaScript e criação de funções e requisições Ajax.
